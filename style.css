@@ -37,7 +37,7 @@ body {
 }
 
 .menu-icon {
-    padding-right: 10px;
+    margin-right: 10px;
     font-size: 20px;
     cursor: pointer;
     display: none;
@@ -60,7 +60,6 @@ body {
 .xbar {
     display: inline-block;
     font-size: 20px;
-    cursor: pointer;
 }
 
 .nav-items2 {
