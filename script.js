@@ -1,7 +1,7 @@
 var navbar_mob = document.querySelector(".navbar-mob");
 
 function mob(){
-    navbar_mob.style.left = "-5%"
+    navbar_mob.style.left = "0%"
 }
 
 function closenav(){

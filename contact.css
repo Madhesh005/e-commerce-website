@@ -2,7 +2,6 @@
     border: 1px solid rgb(76, 76, 76);
     margin: 20px;
     display: flex;
-    overflow: hidden;
 }
 
 .invitecontact1{
@@ -62,4 +61,21 @@
     .invitecontact2 button{
         margin-left: 220px;
     }
+}
+
+@media screen and (max-width:360px){
+    .invitecontact1 {
+        width: 238px;
+    }
+    .invitecontact2{
+        padding: 15px;
+    }
+    #name,#email, #message{
+        width: 250px;
+    }
+    .invitecontact2 button{
+        margin-left: 142px;
+        padding: 5px 10px;
+    }
+
 }

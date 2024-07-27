@@ -58,7 +58,7 @@ body {
 }
 
 .xbar {
-    text-align: right;
+    display: inline-block;
     font-size: 20px;
     cursor: pointer;
 }
@@ -87,8 +87,7 @@ body {
     background-color: rgb(209, 249, 203);
     height: 240px;
     display: flex;
-    padding: 20px 0px 0px 0px;
-
+    padding: 20px 0px 0px 100px;
 }
 
 .header h1 {
@@ -123,7 +122,7 @@ body {
     column-gap: 30px;
     flex-wrap: wrap;
     flex-grow: 90%;
-    padding: 0px 5px;
+    padding: 0px 30px;
     font-size: 20px;
 }
 
@@ -131,7 +130,7 @@ body {
 .about2,
 .about3 {
     height: 260px;
-    width: 300px;
+    width: 280px;
     border: 1px solid black;
     padding: 5px;
 }
@@ -150,7 +149,7 @@ body {
 .products {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 40px;
+    column-gap: 30px;
 }
 
 .products img {
@@ -228,13 +227,27 @@ body {
 }
 
 @media screen and (max-width:360px){
+    .about-section{
+        padding: 0px 5px;
+
+    }
     .products {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0px;
+        row-gap: 10px;
+        padding: 0%;
+        margin: 0%;
+    }
+    .product img{
+        width:150px;
     }
     .reviews{
         padding-left: 20px;
     }
     .customer-section{
         padding-left: 10px;
+    }
+    body .menu-icon:active,.menu-icon:focus,.menu-icon:hover{
+        background-color: none;
     }
 }
