@@ -12,6 +12,7 @@
     height: 30px;
     padding: 3px 5px 3px 5px;
     font-size: 16px;
+    outline: none;
 }
 
 .productgallery{
@@ -35,4 +36,14 @@
         .productgallery{
             grid-template-columns: repeat(2,1fr);
         }
+}
+
+@media screen and (max-width:360px) {
+    .productgallery img{
+        width: 150px;
+    }
+    .productgallery{
+        padding: 0px;
+        padding-bottom:20px;
+    }
 }

@@ -49,7 +49,7 @@ body {
     position: fixed;
     padding: 10px;
     top: 0%;
-    left: -60%;
+    left: -80%;
     width: 220px;
     height: 100vh;
     transition: 1.5s;
@@ -87,7 +87,7 @@ body {
     background-color: rgb(209, 249, 203);
     height: 240px;
     display: flex;
-    padding: 30px 0px 0px 150px;
+    padding: 20px 0px 0px 0px;
 
 }
 
@@ -100,7 +100,7 @@ body {
     column-gap: 10px;
 }
 
-.header button {
+.header .shop a{
     padding: 7px 8px;
     font-size: 17px;
     color: white;
@@ -109,20 +109,6 @@ body {
     cursor: pointer;
 }
 
-.header .youtubelink {
-    background-color: transparent;
-    border: 1px solid rgb(26, 26, 26);
-    border-radius: 5px;
-    padding: 7px 5px;
-    text-align: center;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.header .youtubelink a {
-    color: rgb(98, 101, 97);
-
-}
 
 .header .imgcontainer {
     padding-left: 15%;
@@ -174,9 +160,10 @@ body {
 .products img:hover {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     transform: translate(0px, -5px);
-    
 }
-
+.product{
+    cursor: pointer;
+}
 .reviews {
     padding: 30px;
     text-align: center;
@@ -209,7 +196,7 @@ body {
     }
 
     .header {
-        padding-left: 30px;
+        padding-left: 20px;
         margin: 0px;
         font-size: 15px;
         height: 220px;
@@ -237,5 +224,17 @@ body {
     .products {
         grid-template-columns: repeat(2, 1fr);
         padding: 0px 20px;
+    }
+}
+
+@media screen and (max-width:360px){
+    .products {
+        grid-template-columns: 1fr;
+    }
+    .reviews{
+        padding-left: 20px;
+    }
+    .customer-section{
+        padding-left: 10px;
     }
 }

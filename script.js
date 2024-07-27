@@ -5,5 +5,6 @@ function mob(){
 }
 
 function closenav(){
-    navbar_mob.style.left = "-60%"
+    navbar_mob.style.left = "-80%"
 }
+
