@@ -1,0 +1,241 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+}
+
+.navbar-lap {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(218, 244, 214);
+    column-gap: 6px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+
+.nav-items {
+    display: flex;
+    margin-top: 6px;
+    font-size: 15px;
+}
+
+.items {
+    padding-right: 15px;
+    color: rgb(150, 148, 148);
+}
+
+.items:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.menu-icon {
+    padding-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar-mob {
+    background-color: rgb(204, 243, 199);
+    color: white;
+    position: fixed;
+    padding: 10px;
+    top: 0%;
+    left: -60%;
+    width: 220px;
+    height: 100vh;
+    transition: 1.5s;
+    color: white;
+    z-index: 2;
+}
+
+.xbar {
+    text-align: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav-items2 {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.items a,
+.nav-items2 p {
+    font-size: 20px;
+    padding: 0px;
+    color: rgb(150, 148, 148);
+    margin-bottom: 20px;
+}
+
+.items a:hover {
+    color: black;
+}
+
+.header {
+    background-color: rgb(209, 249, 203);
+    height: 240px;
+    display: flex;
+    padding: 30px 0px 0px 150px;
+
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+.header-buttons {
+    display: flex;
+    column-gap: 10px;
+}
+
+.header button {
+    padding: 7px 8px;
+    font-size: 17px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header .youtubelink {
+    background-color: transparent;
+    border: 1px solid rgb(26, 26, 26);
+    border-radius: 5px;
+    padding: 7px 5px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.header .youtubelink a {
+    color: rgb(98, 101, 97);
+
+}
+
+.header .imgcontainer {
+    padding-left: 15%;
+}
+
+.about {
+    text-align: center;
+}
+
+.about-section {
+    display: flex;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    flex-grow: 90%;
+    padding: 0px 5px;
+    font-size: 20px;
+}
+
+.about1,
+.about2,
+.about3 {
+    height: 260px;
+    width: 300px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.about1 i,
+.about2 i,
+.about3 i {
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+.seller-section {
+    text-align: center;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 40px;
+}
+
+.products img {
+    border-radius: 5px;
+}
+
+.products img:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    transform: translate(0px, -5px);
+    
+}
+
+.reviews {
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    color: white;
+}
+
+.review1,
+.review2,
+.review3 {
+    background-color: rgb(18, 66, 11);
+    padding: 20px;
+}
+
+
+.footer {
+    background-color: rgb(191, 243, 243);
+    padding: 20px 50px;
+}
+
+@media screen and (max-width:767px) {
+    .nav-items {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .header {
+        padding-left: 30px;
+        margin: 0px;
+        font-size: 15px;
+        height: 220px;
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .header .imgcontainer {
+        display: none;
+    }
+
+    .about-section {
+        row-gap: 20px;
+    }
+
+    .about1,
+    .about2,
+    .about3 {
+        width: 450px;
+        height: 240px;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0px 20px;
+    }
+}

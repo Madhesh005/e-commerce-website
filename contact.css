@@ -1,0 +1,65 @@
+.contact-section{
+    border: 1px solid rgb(76, 76, 76);
+    margin: 20px;
+    display: flex;
+    overflow: hidden;
+}
+
+.invitecontact1{
+    background-color: rgb(11, 12, 35);
+    color: white;
+    width:362px;
+    padding: 40px;    
+}
+
+.invitecontact2{
+    background-color: white;
+    padding:40px;
+}
+
+#name,#email,#message{
+    background-color: rgb(228, 231, 231);
+    outline: none;
+    border: none;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    color: black;
+}
+
+#name::placeholder, #email::placeholder{
+    color: rgb(144, 150, 150);
+}
+
+#name{
+    width: 250px;
+}
+
+#email,#message{
+    width: 500px;
+}
+
+.invitecontact2 button{
+    padding: 10px 15px;
+    font-size: 17px;
+    margin-left: 380px;
+    margin-top: 10px;
+    background-color: rgb(0, 173, 9);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media screen and (max-width:767px) {
+    .contact-section{
+        flex-direction: column;
+    }
+    #name,#email, #message{
+        width: 350px;
+    }
+    .invitecontact2 button{
+        margin-left: 220px;
+    }
+}

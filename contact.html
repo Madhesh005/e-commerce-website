@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link rel="stylesheet" href="contact.css">
+    <!--CSS link-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Font Poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins&display=swap"
+        rel="stylesheet">
+
+    <!--Font Awesome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar-lap">
+        <h1>Nostra</h1>
+        <div class="nav-items">
+            <p><a href="index.html" class="items">Home</a></p>
+            <p><a href="products.html" class="items">Products</a></p>
+            <p><a href="contact.html" class="items">Contact</a></p>
+        </div>
+        <div class="menu-icon" onclick="mob()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!--Navigation-Bar-mobile-tab-->
+    <div class="navbar-mob">
+        <p class="xbar" style="text-align: right;" onclick="closenav()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+        <div class="nav-items2">
+            <p class="items"><a href="index.html">Home</a></p>
+            <p class="items"><a href="products.html">Products</a></p>
+            <p class="items"><a href="contact.html">Contact Us</a></p>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <div class="invitecontact1">
+            <h1>Get In Touch</h1><br>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, similique quisquam! Ipsa impedit ducimus ea sequi doloribus, animi voluptatem enim!
+            </p><br>
+            <span>
+                <p>
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    Tambaram,Chennai
+                </p>
+            </span><br>
+            <span>
+                <p>
+                    <i class="fa-solid fa-phone-volume"></i>
+                    +91 917 637 018x
+                </p>
+            </span><br>
+            <span>
+                <p>
+                    <i class="fa-regular fa-clock"></i>
+                    24/7
+                </p>
+            </span>
+        </div>
+        <div class="invitecontact2">
+            <form class="contactform">
+                <label for="name">NAME</label><br>
+                <input type="text" id="name" placeholder="Enter your name here" required><br><br>
+                <label for="email">EMAIL ADDRESS</label><br>
+                <input type="email" id="email" placeholder="Email@gmail.com" required><br><br>
+                <label for="message">YOUR MESSAGE</label><br>
+                <textarea id="message" cols="50" rows="2"></textarea><br>
+                <button>Send Message</button>
+
+            </form>
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <h1>Nostra</h1><br>
+        <p>
+            All Rights Reserved. Reproduction in Whole or in part without permission is prohibited.
+        </p>
+        <br>
+        <p style="font-weight: bold;">
+            <i class="fa-regular fa-copyright"></i>
+            Madhesh_Nostra.in
+        </p>
+    </footer>
+    <!--JavaScript link-->
+    <script src="script.js"></script>
+</body>
+
+</html>

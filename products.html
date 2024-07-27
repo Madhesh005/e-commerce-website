@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="products.css">
+    <!--Font Poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins&display=swap"
+        rel="stylesheet">
+
+    <!--Font Awesome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar-lap">
+        <h1>Nostra</h1>
+        <div class="nav-items">
+            <p><a href="index.html" class="items">Home</a></p>
+            <p><a href="products.html" class="items">Products</a></p>
+            <p><a href="contact.html" class="items">Contact</a></p>
+        </div>
+        <div class="menu-icon" onclick="mob()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!--Navigation-Bar-mobile-tab-->
+    <div class="navbar-mob">
+        <p class="xbar" style="text-align: right;" onclick="closenav()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+        <div class="nav-items2">
+            <p class="items"><a href="index.html">Home</a></p>
+            <p class="items"><a href="collections.html">Collections</a></p>
+            <p class="items"><a href="contact.html">Contact Us</a></p>
+        </div>
+    </div>
+
+    <main class="product-section">
+        <form class="product-search" style="padding-top:15px">
+            <h1 style="font-size:25px">Our Products</h1>
+            <label for="search"></label>
+            <input type="text" id="search" placeholder="Search the Products">
+        </form>
+        <br><br>
+        <div class="productgallery">
+            <div class="product">
+                <img src="assets/cc1.png" alt="product1">
+                <p>Rhododendron <br> $25</p>
+            </div>
+            <div class="product">
+                <img src="assets/gc2.png" alt="product2">
+                <p>Dahlia <br> $71</p>
+            </div>
+            <div class="product">
+                <img src="assets/cc4.png" alt="product3">
+                <p>Carnation <br> $30</p>
+            </div>
+            <div class="product">
+                <img src="assets/gc3.png" alt="product4">
+                <p>Flower Pot for Balcony <br> $50</p>
+            </div>
+            <div class="product">
+                <img src="assets/gc1.png" alt="product5">
+                <p>Self Water Plant <br> $25</p>
+            </div>
+            <div class="product">
+                <img src="assets/cc3.png" alt="product6">
+                <p>Artificial Flower Pot <br> $71</p>
+            </div>
+            <div class="product">
+                <img src="assets/cc2.png" alt="product7">
+                <p>Pink Jasmine <br> $30</p>
+            </div>
+            <div class="product">
+                <img src="assets/gc4.png" alt="product8">
+                <p>Rose Products <br> $50</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <h1>Nostra</h1><br>
+        <p>
+            All Rights Reserved. Reproduction in Whole or in part without permission is prohibited.
+        </p>
+        <br>
+        <p style="font-weight: bold;">
+            <i class="fa-regular fa-copyright"></i>
+            Madhesh_Nostra.in
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
